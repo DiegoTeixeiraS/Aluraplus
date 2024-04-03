@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Protest+Strike&display=swap');
+@import url("styles/header.css");
+
+:root {
+    --cor-principal: #000000, #395B64;    
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #ec3046;
+    --cor-terciaria: #2BDEFD;
+    --fonte-principal: "Chakra Petch";
+    --fonte-secundaria: "Protest Strike";
+    }
+
+body {
+    background: linear-gradient(to bottom, var(--cor-principal));
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("../img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__descricao {
+    padding: 3em;
+}
+
+.container__botao {
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    color: var(--cor-terciaria);
+    padding: 4%;
+}
+
+.container__botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 1em;
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__botao__secundario:hover {
+    color: var(--cor-terciaria);
+    padding: 4%;
+}
+
+.container__botao__terciario {
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 0.8em;
+    color: var(--cor-terciaria);
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 14px;
+}
+
+.container__botao__terciario:hover {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+}
+
+.container__aviso {
+    color: var(--cor-terciaria);
+    font-size: 12px;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.imagem__secundaria{
+    width: 80%;
+
+}
+
+.secundario {
+   align-items: center;
+   margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.1em;
+}
+
+.descricao__subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 38px;
+    color: var(--cor-primaria);
+}
+
+.lista__item {
+    font-family: var(--fonte-secundaria);
+    font-size: 32px;
+    color: var(--cor-primaria);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.rodape__texto{
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.lista__link {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 1em;
+    color: var(--cor-primaria);
+}
+
+.lista__link:hover {
+    color: var(--cor-terciaria);
+
+}
+
+.lista__link:active {
+    color: var(--cor-secundaria);
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .imagem__secundaria {
+        width: 50vw;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+        padding: 1em;
+    }
+}
